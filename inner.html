@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" initial-scale="1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <script type="text/javascript" src="js/custom.js"></script>
+</head>
+<body class="dashboradbg">
+    <div class="container-fluid">
+        <section id="menu">
+            <div class="logo">
+                <img id="menu-btn" src="images/menu-bar.svg" alt="" width="20px" height="30px">
+                <img src="images/logo.svg" alt="Company-logo">
+            </div>
+            <div class="menu-item">
+                <li><img src="images/dashboard-default.svg" alt="" id="Dashborad-active"><a href="#"  onclick="dasbboard()">Dashboard</a></li>
+                <li><img src="images/graph-default.svg" alt="" id="Analysis-active"><a href="#" onclick="analysis()">Analysis</a></li>
+                <li><img src="images/inbox-default.svg" alt=""><a href="#">Inbox</a></li>
+                <li><img src="images/clock-default.svg" alt=""><a href="#">History</a></li>
+                <li><img src="images/user-default.svg" alt=""><a href="#">Users</a></li>
+                <li><img src="images/maintenance-default.svg" alt=""><a href="#">Maintenance</a></li>
+                <li><img src="images/setting-default.svg" alt=""><a href="#">Setting</a></li>
+            </div>
+        </section>
+        <section id="interface" >
+            <div class="nagivation">
+                <div class="n1">
+                    <div class="search">
+                        <img src="images/search-icon.svg" alt="">
+                        <input type="text" placeholder="search">
+                    </div>
+                </div>
+
+                <div class="profile">
+                    <img src="images/notification-icon.svg" alt="">
+                    <img class="john" src="images/profile.png" alt="">
+                    <h6 style="padding-left:5px;">John Doe</h6>
+                    <img class="downward-arrow" src="\images/downward-arrow.svg" alt="">
+                </div>
+            </div>
+            <h2>Analysis</h3>
+            <div class="form">
+                <form action="#">
+                    <div class="onecol">
+                        <h3>One Column</h3>
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" placeholder="Name" name="Name" class="form-control"> 
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <select class="form-select" aria-placeholder="Dropdown">
+                                    <option selected>Dropdown</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <textarea name="address" id="address" cols="20" rows="7" class="form-control" placeholder="Multiple Line"></textarea>
+                            </div>
+                        </div>        
+                    </div>
+                    <div class="twocol">
+                        <h3>Two Column</h3>
+                        <div class="row">
+                            <div class="col"> <input type="text" placeholder="Name" name="Name" class="form-control"> </div>
+                            <div class="col"><input type="text" placeholder="Name" name="Name" class="form-control"></div>
+                        </div>
+
+                    </div>
+                  
+                </form>
+            </div>
+        </section>
+    </div>
+
+    
+</body>
+</html>
