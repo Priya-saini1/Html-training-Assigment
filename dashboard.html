@@ -8,14 +8,15 @@
     <link rel="stylesheet" href="css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <script type="text/javascript" src="js/custom.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
 </head>
 
 <body class="dashboradbg">
     <div class="container-fluid">
         <section id="menu">
             <div class="logo">
-                <img id="menu-btn" src="images/menu-bar.svg" alt="" width="20px" height="30px">
-                <img src="images/logo.svg" alt="Company-logo">
+                <img id="menu-btn-logo" src="images/menu-bar.svg" alt="" width="20px" height="30px">
+                <img src="images/logo.svg" alt="Company-logo" id="company-logo">
             </div>
             <div class="menu-item">
                 <li><img src="images/dashboard-default.svg" alt="" id="Dashborad-active"><a href="#"  onclick="dasbboard()">Dashboard</a></li>
@@ -30,6 +31,7 @@
         <section id="interface">
             <div class="nagivation">
                 <div class="n1">
+                    <img id="menu-btn1" src="images/menu-bar.svg" alt="" width="20px" height="30px">
                     <div class="search">
                         <img src="images/search-icon.svg" alt="">
                         <input type="text" placeholder="search">
@@ -90,7 +92,7 @@
             <!-- graph display -->
 
             <div class="row">
-                <div class="col mt-4 w-70 ps-0 ms-5  bg-white text-dark">
+                <div class="col-sm-6 mt-4 ps-0 ms-5 bg-white text-dark">
                     <div class="row">
                         <div class="col-sm-6 ml-2">
                             <h3 style="padding: 7px;">Sale</h3>
@@ -109,7 +111,7 @@
                             </div>
                         </div>
                     </div>
-                    <img src="images/data-graph.png" alt="" width="100%" style="padding:15px">
+                    <img src="images/data-graph.png" alt="" width="100%" style="padding:12px;">
                 </div>
                 <div class="col mt-4 ms-5 me-5 bg-white text-dark">
                     <div class="row">
@@ -117,7 +119,6 @@
                     </div>
                     <img src="images/pie-chart.svg" alt="">
                     <div class="row">
-                       
                         <table class="pie-charts">
                             <tr class="d-flex pie-charts">
                                 <td class="d-flex pie-charts"><p class="circle1 me-2"></p>United States of America</td>
@@ -233,6 +234,11 @@
     </div>
     <script src="js/bootstrap.bundle.min.js"></script>
    
+    <script>
+       $("#menu-btn1").click(function(){
+            $("#menu").toggleClass("active");
+      });
+    </script>
    
 </body>
 

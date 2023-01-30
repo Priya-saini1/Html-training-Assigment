@@ -2,19 +2,18 @@ body{
     background: #FAFAFA 0% 0% no-repeat padding-box;
     width: 100%;
 }
-.imgcirlce{
+.imgcirlcecom{
     border: 20px solid #FFFFFF;
-    width: 100%;
-    height:auto;
+    min-width: 300px;
+    width:25vw;
+    /* width: 100%;
     margin-top: 62px;
-    margin-left:60px;
-}
-.company-logo{
+    margin-left:60px; */
+ }
+/* .company-logo{
     width: 49px;
     height:49px;
     margin-top:100px;
-
-
 }
 .txt-company{
     margin-top:-49px;
@@ -22,8 +21,8 @@ body{
 }
 
 .main-container{
-    /* width:710px; */
-    /* margin-left:76px; */
+     width:710px; 
+     margin-left:76px;
     width:auto;
     margin-top:70px;
 }
@@ -34,118 +33,138 @@ body{
     margin-top:20px;
     height: 700px;
     padding-left:170px;
-}
+} */
 
 .business-text{
     font:normal normal 40px/47px Roboto ;
     margin-top:19.17px;
-   
 }
 
-.login .acc{
+/* .login .acc{
     font-family: "Roboto";
     font-size: 25px;
     width: 260px;
     height: 33px; 
-    margin-top:31.87px;
-    margin-bottom: 23.45px;
-}
+     margin-top:31.87px;
+    margin-bottom: 23.45px; 
+} */
 
 .loginbutton{
     border-radius: 23px;
     width: 138px;
     height: 45px;
-    margin-top:30.5px;
+    /* margin-top:30.5px; */
 }
 
+
+
+/* 
 input[type="password"]{
     margin-top: 14px;
-}
-.login a{
+} 
+.forgetpass {
     text-decoration: none;
     width: 153px;
     height: 20px;
-    float: right;
+     float: right;
     margin-top:42px;
     font-family: "Roboto";
     font-size:15px;
     color:#ADADAD;
+} */
+
+
+.forget{
+    font: normal normal normal 15px/20px Roboto;
+    color:#ADADAD;
+    text-decoration: none;
 }
 
-.register-here .register{
+ .register{
     font: normal normal normal 15px/20px Roboto;
     letter-spacing: 0px;
     color: #C8242F;
     margin-top:3px;
+    text-decoration: none;
 }
 .register-here{
     margin-top:23.13px;
     color:#ADADAD;
 }
-
-@media screen and (min-width:791px) {
+/* responsive for login page */
+/* 
+@media screen and (max-width:766px) {
     .main-container{
         width:710px;
-        margin-left:35px;
-        margin-top:20px;
-        
+        margin-top:0px;
+ 
     }
-    
     .main-container .login{
-        width:730px;
-        margin-left:-0px;
-        margin-top:20px;
-        height: 700px;
-        padding-left:170px;
-       
-       
+        width:700px;
+        margin-left:-40px;
+        margin-top:5px;
+        height: 600px;
     }
-    
+    .imgcirlce{
+        border: 20px solid #FFFFFF;
+        width: 100%;
+        height:auto;
+        margin-top: 62px;
+        margin-left: 10px;
+    }
+  }
+  @media screen and (max-width:853px){
+    .imgcirlce{
+        border: 20px solid #FFFFFF;
+        width: 80%;
+        height:auto;
+        margin-top: 62px;
+        margin-left: 70px;
+    }
+    .main-container .login{
+        width:700px;
+        margin-left:-20px;
+        height: 600px;
+    }
+    .main-container{
+        width:710px;
+        margin-top:-20px;
+    }
+  }
+
+  
+  @media screen and (max-width:572px){
+    .main-container .login{
+        width:700px;
+        margin-left:-80px;
+        margin-top:5px;
+        height: 600px;
+    }
+    .imgcirlce{
+        border: 20px solid #FFFFFF;
+        width: 95%;
+        height:auto;
+        margin-top: 62px;
+        margin-left: 60px;
+    }
+  } */
+
+  
+
+  @media screen and (max-width:498px){
     .business-text{
-        font:normal normal 40px/47px Roboto ;
+        font:normal normal 30px/37px Roboto ;
         margin-top:19.17px;
-       
     }
-    
-    .login .acc{
-        font-family: "Roboto";
-        font-size: 25px;
-        width: 260px;
-        height: 33px; 
-        margin-top:31.87px;
-        margin-bottom: 23.45px;
-    }
-    
-    .loginbutton{
-        border-radius: 23px;
-        width: 138px;
-        height: 45px;
-        margin-top:30.5px;
-    }
-    
-    input[type="password"]{
-        margin-top: 14px;
-    }
-    .login a{
-        text-decoration: none;
-        width: 153px;
-        height: 20px;
-        float: right;
-        margin-top:42px;
-        font-family: "Roboto";
-        font-size:15px;
-        color:#ADADAD;
-    }
-    
-    .register-here .register{
-        font: normal normal normal 15px/20px Roboto;
-        letter-spacing: 0px;
-        color: #C8242F;
-        margin-top:3px;
-    }
-    
   }
   
+@media screen and (min-width:356){
+    .business-text{
+        font:normal normal 20px/27px Roboto ;
+        margin-top:19.17px;
+    }
+}
+
 
   /* dashborad css */
 
@@ -176,6 +195,18 @@ input[type="password"]{
     padding-left: 0px;
     margin-left:1px;
     cursor: pointer;
+}
+.n1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#menu-btn1{
+    cursor: pointer;
+    margin-right:20px;
+  
+   display:none;
 }
 
 #menu .logo img{
@@ -388,16 +419,117 @@ height: 26px;
 
 
 
-/* responsive */
+/* menu and sidebar responsive */
 
 @media (max-width:769px) {
-#menu {
-    width: 270px;
-    position: fixed;
-    background-color: #FFFFFF;
-}
+
+    #menu{
+        width:270px;
+        position: fixed;
+        left:-270px;
+        transition: 0.3s ease;
+    } 
+    #menu.active{
+        left:0px;
+    } 
+    #menu-btn1{
+        display:initial;
+    }
+
+    #menu-btn-logo{
+        display: none;
+    }
+    #company-logo{
+        margin-left:25px;
+    }
+
+    #interface{
+        width:100%;
+        margin-left:0px;
+        display: inline-block;
+        transition: 0.3s ease;
+    }
+
+    #menu.active~ #interface{
+        width:calc(100% - 270px);
+        margin-left:270px;
+        transition: 0.3s ease;
+    }
+    
+    #interface .nagivation{
+    width:100%;
+    }
+
+    .values{
+    padding:30px 30px 0 30px;
+    justify-content:flex-start;
+    }
+
+    .values .val-box{
+        background-color: #FFFFFF;
+        margin:10px 20px 10px 0;
+        padding:16px 20px;
+    }
+
+    .board{
+        width:92%;
+        overflow-x: auto;
+        padding:0;  
+    }
+
+    table{
+        width:95%;
+        border-collapse: collapse;
+    }
     
 }
+@media (max-width:425px){
+    #interface{
+        width:fit-content;        /*fit the content according to the width of your content */
+    }
+    #menu{
+        width:200px;
+        position: fixed;
+        left:-270px;
+        background-color:#FFFFFF;
+    } 
+    #interface .nagivation{
+        width:100%;
+    }
+    #menu.active{
+        left:0px;
+    } 
+    #menu.active~ #interface{
+        width:calc(100% - 200px);
+        margin-left:270px;
+        transition: 0.3s ease;
+    }
+    .values{
+        padding:30px 30px 0 30px;
+        justify-content:flex-start;
+        }
+  
+}
+@media (max-width:1024px){
+    .values{
+        padding:30px 30px 0 30px;
+        justify-content:flex-start;
+        }
+    
+    .values .val-box{
+            margin:10px 20px 10px 0;
+            padding:16px 20px;
+        }
+}
+/* providing the spacing between the box */
+@media (max-width:1406px){
+   
+    .values .val-box{
+            margin:10px 20px 10px 0;
+            padding:16px 20px;
+        }
+}
+   
 
 
 /* inner pages css */
@@ -411,8 +543,9 @@ height: 26px;
     height: 39px;
 }
 
-.form{
+.form1{
     background-color: white;
+   
 }
 .form .onecol{
     margin-top:14px;
@@ -420,3 +553,84 @@ height: 26px;
 .onecol input,select,textarea{
    margin-bottom: 21px;
 }
+.onecol h3{
+    font: normal normal medium 22px/29px Roboto;
+    color: #3E3E3E;
+    font-size: 22px;
+}
+
+.twocol h3{
+    font: normal normal medium 22px/29px Roboto;
+    color: #3E3E3E;
+    font-size: 22px;
+}
+.thirdcol h3{
+    font: normal normal medium 22px/29px Roboto;
+    color: #3E3E3E;
+    font-size: 22px;
+}
+.thirdcol .dashed-border{
+    border: 1px dashed #ADADAD;
+border-radius: 5px;
+}
+.fourcol h3{
+    font: normal normal medium 22px/29px Roboto;
+    color: #3E3E3E;
+    font-size: 22px;
+}
+.fivecol h3{
+    font: normal normal medium 22px/29px Roboto;
+    color: #3E3E3E;
+    font-size: 22px;
+    /* margin-left:15px; */
+}
+.fivecol h6{
+    font: normal normal medium 18px/24px Roboto;
+    color: #3E3E3E;
+    font-size: 18px;
+}
+.fivecol label{
+font: normal normal normal 15px/20px Roboto;
+color: #3E3E3E;
+font-size:15px;
+}
+/* file upload button */
+.customcss{
+    margin: 2px;
+    font-family: Roboto;
+    font-weight: bold;
+    /* text-shadow: 0px 1px 1px 0px #000; */
+    border:2px solid #C8242F;
+    padding:8px 34px;
+    color:#C8242F;
+    cursor: pointer;
+    border-radius: 22px;
+    box-shadow: 0x 1px 2px 1px #101010;
+}
+input[type="file"]
+{
+    display: none;
+}
+
+/* radio button and checkbox*/
+input[type="radio"]:checked{
+    background-color: #C8242F ;
+    border: #C8242F ;
+}
+
+input[type="checkbox"]:checked{
+    background-color: #C8242F ;
+    border: #C8242F ;
+}
+
+button[type="button"]{
+ width: 400px;
+height: 44px;
+}
+button.primary{
+    border-radius: 23px;
+    width: 124px;
+height: 45px;
+}
+
+/* tabs  */
