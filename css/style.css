@@ -6,9 +6,12 @@ body{
 
 .imgcirlcecom{
     border: 20px solid #FFFFFF;
-    width: 25vw;
+    height: 100%;
+    width: auto;
+    max-height: 530px;
     min-width:300px;
  }
+ 
 
 .business-text{
     font:normal normal 40px/47px Roboto ;
